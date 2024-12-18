@@ -1,0 +1,44 @@
+/* General container styling */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+  }
+  
+  /* Project title styling */
+  .project-title h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0d6efd;
+    text-align: center;
+  }
+  
+  /* Footer positioning */
+  .footer {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+  
+  /* Coordinator styling */
+  .coordinator {
+    font-size: 1.2rem;
+    color: #333;
+    font-style: italic;
+  }
+  
+  /* Student styling */
+  .student {
+    font-size: 1.2rem;
+    color: #333;
+    font-style: italic;
+  }
+  

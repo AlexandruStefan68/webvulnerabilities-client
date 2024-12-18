@@ -1,0 +1,19 @@
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffdd57; /* A contrasting highlight color */
+  }
+  
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
