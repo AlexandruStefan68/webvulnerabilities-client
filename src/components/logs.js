@@ -7,7 +7,7 @@ function Logs() {
 
   const fetchLogs = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/monitor");
+      const response = await axios.get("https://web-vulnerabilities-api-803cd9675a24.herokuapp.com/monitor");
       const rawLogs = response.data.logs || "No suspicious traffic detected.";
       const layer2Logs = [];
       const layer3Logs = [];

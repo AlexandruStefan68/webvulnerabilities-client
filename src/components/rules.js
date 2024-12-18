@@ -12,7 +12,7 @@ function SecurityRules() {
     }
 
     try {
-      await axios.post("http://localhost:5000/security-rules", { rules: securityRules });
+      await axios.post("https://web-vulnerabilities-api-803cd9675a24.herokuapp.com/security-rules", { rules: securityRules });
       alert("Security rules saved successfully.");
     } catch (error) {
       console.error("Error saving security rules:", error.response?.data?.error || error.message);

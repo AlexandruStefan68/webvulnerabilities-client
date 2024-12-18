@@ -21,7 +21,7 @@ function FileAnalysis() {
     formData.append("file", file);
 
     try {
-      const response = await axios.post("http://localhost:5000/analyze", formData, {
+      const response = await axios.post("https://web-vulnerabilities-api-803cd9675a24.herokuapp.coms/analyze", formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 
