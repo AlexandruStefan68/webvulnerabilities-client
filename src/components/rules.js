@@ -8,7 +8,7 @@ function SecurityRules() {
   useEffect(() => {
     const fetchRules = async () => {
       try {
-        const response = await fetch(`${process.env.REACT_APP_API_URL}/security-rules`);
+        const response = await fetch(`https://web-vulnerabilities-api-803cd9675a24.herokuapp.com/security-rules`);
         const data = await response.json();
         if (data.rules) {
           setSecurityRules(data.rules.join('\n')); // Join rules into a single string
@@ -29,7 +29,7 @@ function SecurityRules() {
     }
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/security-rules`, {
+      const response = await fetch(`https://web-vulnerabilities-api-803cd9675a24.herokuapp.com/security-rules`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ rules: securityRules }),
